@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuccessAlertComponent implements OnInit {
 
-  constructor() { }
+  message:string;
+
+  constructor() {
+    this.message = "This is success alert component"
+  }
+
+  getMessage(){
+    return this.message
+  }
 
   ngOnInit() {
   }
