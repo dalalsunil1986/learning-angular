@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  isButtonDisabled:boolean
+  testMessage:string
+
+  constructor(){
+    this.isButtonDisabled = true
+
+    setTimeout(()=>{
+      this.isButtonDisabled = false
+    },2000)
+  }
+
+
+  changeTestMessage(){
+    this.testMessage = "This is test message"
+  }
+
+  printName(){
+
+  }
 }

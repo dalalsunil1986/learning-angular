@@ -7,6 +7,16 @@
 </div>
 
 <div>
+  <button class="btn btn-success" [disabled]="isButtonDisabled" (click)="changeTestMessage()">Test Button</button>
+</div>
+
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <p>{{testMessage}}</p>
+  </div>
+</div>
+
+<div>
   <app-warning-alert></app-warning-alert>
   <app-success-alert></app-success-alert>
 </div>
